@@ -1,4 +1,5 @@
 import 'package:Assisgnment/pages/current_weather_page.dart';
+import 'package:Assisgnment/pages/weather_exp.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,7 +15,8 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('Weather App'),
       ),
-      body: CurrentWeatherPage(),
+      // body: CurrentWeatherPage(),
+      body: WeatherExp(),
     );
   }
 }
