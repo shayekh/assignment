@@ -11,7 +11,8 @@ class WeatherExp extends StatelessWidget {
       body: FutureBuilder(
           future: ApiService().getPosts(),
           builder: (context, snapshot) {
-            if (!snapshot.hasData) return CircularProgressIndicator();
+
+            if (!snapshot.hasData) return Center(child: CircularProgressIndicator());
             final posts = snapshot.data;
             return Center(
               child: Column(children: <Widget>[
@@ -29,7 +30,6 @@ class WeatherExp extends StatelessWidget {
                   padding: EdgeInsets.all(8.0),
                   child: Text(
                     getFormattedDate(posts['dt'], 'hh:mm a, EEEE, MMMM dd, yyyy'),
-                    style: subText,
                   ),
                 ),
               ]),

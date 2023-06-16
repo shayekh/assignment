@@ -15,8 +15,8 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('Weather App'),
       ),
-      body: CurrentWeatherPage(),
-      // body: WeatherExp(),
+      // body: CurrentWeatherPage(),
+      body: WeatherExp(),
     );
   }
 }
